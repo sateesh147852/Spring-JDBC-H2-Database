@@ -31,7 +31,7 @@ public class StudentRepository {
         String sql = "select * from student";
         RowMapper<Student> mapper = (rs, rowNum) -> {
             Student student = new Student();
-            student.setRollNo(rs.getInt("rollNo"));
+            student.setRollNo(rs.getInt("rollno"));
             student.setName(rs.getString("name"));
             student.setMarks(rs.getInt("marks"));
             return student;
